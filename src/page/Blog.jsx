@@ -6,12 +6,16 @@ import Empty from "./../component/Empty";
 import "./Blog.css";
 import { useNavigate } from "react-router-dom";
 import Footer from "../component/Footer/Footer";
+import { useLocation } from "react-router-dom";
 
 const Blog = () => {
   const { id } = useParams();
   const [blog, setBlog] = useState(null);
   const navication = useNavigate();
-
+const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
   useEffect(() => {
     let blog = blogList.find((blog) => blog.id === parseInt(id));
     if (blog) {
