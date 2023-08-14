@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Routers, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routers, Routes, Route,useLocation } from "react-router-dom";
 import Home from "./page/Home";
 import Blog from "./page/Blog";
-import { useLocation } from "react-router-dom";
+
 function App() {
    const { pathname } = useLocation();
   useEffect(() => {
