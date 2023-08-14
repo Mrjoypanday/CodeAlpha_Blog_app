@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
+
 import "./App.css";
-import { BrowserRouter as Routers, Routes, Route,useLocation } from "react-router-dom";
+import { BrowserRouter as Routers, Routes, Route } from "react-router-dom";
 import Home from "./page/Home";
 import Blog from "./page/Blog";
 
 function App() {
-   const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [pathname]);
+  //  const { pathname } = useLocation();
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }, [pathname]);
   return (
     <Routers>
       <Routes>
