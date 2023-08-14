@@ -1,0 +1,19 @@
+.BlogList-Wrap{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:2rem;
+}
+@media (max-width:900px) {
+    .BlogList-Wrap{
+       
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+@media (max-width:500px) {
+    .BlogList-Wrap{
+       
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
